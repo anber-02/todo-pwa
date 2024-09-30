@@ -49,7 +49,7 @@ export function DarkTodoAppComponent() {
   const completedPercentage = (tasks.filter(task => task.status === 'completed').length / tasks.length) * 100 || 0
 
   return (
-    <div className=" bg-gray-900 text-white p-4 max-w-md mx-auto">
+    <div className="min-h-screen bg-gray-900 text-white p-4 max-w-md mx-auto">
       <header className="mb-6">
         <h1 className="text-2xl font-bold">Hey, Welcome Bro</h1>
         <p className="text-gray-400">{currentDateTime.toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</p>
